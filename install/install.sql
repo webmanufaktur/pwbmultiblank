@@ -1,4 +1,4 @@
-# --- WireDatabaseBackup {"time":"2019-06-13 14:50:46","user":"","dbName":"pwbblankmulti","description":"","tables":[],"excludeTables":["pages_drafts","pages_roles","permissions","roles","roles_permissions","users","users_roles","user","role","permission"],"excludeCreateTables":[],"excludeExportTables":["field_roles","field_permissions","field_email","field_pass","caches","session_login_throttle","page_path_history"]}
+# --- WireDatabaseBackup {"time":"2019-06-21 16:33:10","user":"","dbName":"pwbblankmulti","description":"","tables":[],"excludeTables":["pages_drafts","pages_roles","permissions","roles","roles_permissions","users","users_roles","user","role","permission"],"excludeCreateTables":[],"excludeExportTables":["field_roles","field_permissions","field_email","field_pass","caches","session_login_throttle","page_path_history"]}
 
 DROP TABLE IF EXISTS `caches`;
 CREATE TABLE `caches` (
@@ -241,7 +241,7 @@ INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('51', 'Change 
 INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('52', 'Administer users', NULL);
 INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('53', 'User can update profile/password', NULL);
 INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('54', 'Lock or unlock a page', NULL);
-INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('1', 'Home', NULL);
+INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('1', 'Home', 'Startseite');
 INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('1000', 'Search', NULL);
 INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('1005', 'Site Map', NULL);
 INSERT INTO `field_title` (`pages_id`, `data`, `data1021`) VALUES('1006', 'Use Page Lister', NULL);
@@ -516,7 +516,7 @@ CREATE TABLE `pages` (
   KEY `published` (`published`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1026 DEFAULT CHARSET=utf8;
 
-INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`, `name1021`, `status1021`) VALUES('1', '0', '1', 'en', '9', '2019-06-13 16:47:19', '41', '2019-06-13 15:32:01', '2', '2019-06-13 15:32:01', '0', NULL, '1');
+INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`, `name1021`, `status1021`) VALUES('1', '0', '1', 'en', '9', '2019-06-18 13:15:15', '41', '2019-06-13 15:32:01', '2', '2019-06-13 15:32:01', '0', 'de', '1');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`, `name1021`, `status1021`) VALUES('2', '1', '2', 'processwire', '1035', '2019-06-13 15:32:17', '40', '2019-06-13 15:32:01', '2', '2019-06-13 15:32:01', '5', NULL, '1');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`, `name1021`, `status1021`) VALUES('3', '2', '2', 'page', '21', '2019-06-13 15:32:01', '41', '2019-06-13 15:32:01', '2', '2019-06-13 15:32:01', '0', NULL, '1');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`, `name1021`, `status1021`) VALUES('6', '3', '2', 'add', '21', '2019-06-13 15:32:28', '40', '2019-06-13 15:32:01', '2', '2019-06-13 15:32:01', '1', NULL, '1');
